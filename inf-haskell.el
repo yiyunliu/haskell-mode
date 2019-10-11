@@ -64,10 +64,10 @@ directory structure."
                                haskell-process-path-ghci
                              (list haskell-process-path-ghci))
                            haskell-process-args-ghci))))
-    ('cabal-repl (nconc `(,haskell-process-path-cabal
+    ('cabal-repl (append `(,haskell-process-path-cabal
                           "repl")
                         haskell-process-args-cabal-repl))
-    ('stack-ghci (nconc `(,haskell-process-path-stack
+    ('stack-ghci (append `(,haskell-process-path-stack
                           "ghci")
                         haskell-process-args-stack-ghci))))
 
